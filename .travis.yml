@@ -1,6 +1,4 @@
-before_install:
-- sudo apt-get install python3.8
-- cd test2
+before_install: cd test2
 
 language: python
   - "3.8"
