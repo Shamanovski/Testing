@@ -1,3 +1,2 @@
 pytest 
-allure==2.164.0
 https://github.com/paulc/gmail-sender/archive/master.zip#egg=gmail-sender
