@@ -1,0 +1,1 @@
+var input = document.querySelectorAll("input[type=text]")
