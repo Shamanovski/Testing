@@ -23,12 +23,9 @@ class TestInputException: pass
 
 
 def test_message_dispatch(username, password, to, body, subject):
-    # username regex
-
     with allure.step("Check password"):
         if password is None:
             raise TestInputException("Password required")
-        # regex
     
     with allure.step("Check body"):
         if body is None:
@@ -36,9 +33,6 @@ def test_message_dispatch(username, password, to, body, subject):
     
     gmail = GMail(username=username, password=password)
     to = to.split(",")
-    with allure.step("Check target mailbox"):
-        # regex mailbox
-        pass
     msg = Message(subject=subject,
                   to=",".join(to),
                   text=body)
