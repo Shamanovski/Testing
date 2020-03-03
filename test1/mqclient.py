@@ -23,7 +23,7 @@ while keep_running:
         message = queue.get(None, md, gmo)
         # handle message
         print(message)
-        md.MsgId = pymqi.CMQC.MQMI_NONE
+        md.MsgId = pymqi.CMQC.MQMI_NONE 
         md.CorrelId = pymqi.CMQC.MQCI_NONE
         md.GroupId = pymqi.CMQC.MQGI_NONE
 
